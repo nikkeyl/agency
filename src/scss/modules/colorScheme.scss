@@ -1,0 +1,14 @@
+/* COLOR SCHEME */
+.dark {
+    .page {
+        color: $color-light;
+        background-color: $color-dark-gray;
+    }
+}
+
+.light {
+    .page {
+        color: $color-dark-gray;
+        background-color: $color-light;
+    }
+}

@@ -1,0 +1,105 @@
+/* TABS */
+.tabs {
+    &__navigation {
+        display: flex;
+        gap: rem(30);
+        overflow-x: auto;
+        width: 100%;
+
+        &:not(:last-child) {
+            @include adaptive-value("margin-bottom", 40, 20);
+        }
+
+        @media (min-width: em($mobile-small)) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        line-height: math.div(36, 18);
+        letter-spacing: 0.01em;
+        white-space: nowrap;
+        text-align: center;
+        text-transform: capitalize;
+        transition: color 0.3s ease;
+
+        &.tab-active {
+            color: $color-light-blue;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $color-light-blue;
+            }
+        }
+    }
+
+    &__content {
+    }
+
+    &__body {
+    }
+
+    &__inner {
+        @media (min-width: em(600)) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(20);
+        }
+    }
+
+    &__item {
+        opacity: 0;
+        transform: translateY(rem(20));
+        transition: transform 0.5s ease, opacity 0.5s ease;
+
+        &.watcher-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (min-width: em(600)) {
+            &--big {
+                flex: 1 1 64%;
+            }
+
+            &--small {
+                flex: 1 1 32%;
+                transition-delay: 0.2s;
+            }
+        }
+
+        @media (max-width: md(600)) {
+            &:not(:last-child) {
+                margin-bottom: rem(20);
+            }
+        }
+    }
+
+    &__image-ibg {
+        display: block;
+        overflow: hidden;
+        border-radius: rem(20);
+        height: 100%;
+        background-color: $color-light-blue;
+
+        img {
+            transition: all 0.3s ease;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+        .tabs__item--big & {
+            padding-bottom: percent(443, 740);
+        }
+
+        .tabs__item--small & {
+            padding-bottom: percent(443, 360);
+        }
+    }
+}

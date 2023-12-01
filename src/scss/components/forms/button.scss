@@ -1,0 +1,76 @@
+/* BUTTON */
+.button {
+    $animation: 0;
+    $icon: 0;
+    $fw: 0;
+
+    display: inline-flex;
+    justify-content: center;
+    border-radius: rem(10);
+    padding: rem(23) rem(63);
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: math.div(29, 24);
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #080a2b;
+    background-color: $color-light;
+    transition: all 0.3s ease;
+
+    &::before {
+    }
+
+    &::after {
+    }
+
+    &:link {
+    }
+
+    &:visited {
+    }
+
+    &:focus {
+        background-color: rgb(41 145 255);
+    }
+
+    &:active {
+        transform: translateY(rem(3));
+    }
+
+    &:disabled {
+    }
+
+    @if $icon == 1 {
+        span {
+            padding: 0 rem(30) 0 0;
+            background: url("@content") left no-repeat;
+        }
+    }
+
+    @if $animation == 1 {
+        @keyframes name {
+            0% {
+            }
+
+            50% {
+            }
+
+            100% {
+            }
+        }
+    }
+
+    @if $fw == 1 {
+        &--fw {
+            width: 100%;
+        }
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            color: $color-light;
+            background-color: rgb(41 145 255);
+        }
+    }
+}

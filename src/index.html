@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/imports/head.htm',{
+    "title":"Agency"
+    })
+    <!-- BODY -->
+    <body class="page">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <!-- HEADER -->
+            @@include('html/components/header.htm',{})
+            <!-- CONTENT -->
+            <main class="content">
+                <section data-watch="navigator" data-watch-threshold="0.5" data-fullscreen class="home">
+                    <div data-prlx-mouse-wrapper class="home__container">
+                        <div class="home__body">
+                            <h1 class="home__title">
+                                Grow your
+                                Business Google Ads &
+                                Instagram Ads
+                            </h1>
+                            <div class="home__sub-title">
+                                <p>It is a long established fact that a reader will be distracted by the readable.</p>
+                            </div>
+                            <div class="home__actions">
+                                <button type="button" class="button home__button">Contact Us</button>
+                                <button type="button" class="home__play">
+                                    <svg>
+                                        <use href="@content/icons/sprite.svg#play"></use>
+                                    </svg>
+                                    Intro Video
+                                </button>
+                            </div>
+                        </div>
+                        <div title="Rating" data-prlx-mouse data-prlx-dxr data-prlx-dyr class="home__image-ibg home__image-ibg--contain">
+                            <img src="@content/svg/home/home.svg" alt="Rating">
+                        </div>
+                    </div>
+                </section>
+                <section data-watch="navigator" class="creative">
+                    <div class="creative__container">
+                        <div class="creative__body">
+                            @@include('html/modules/title.htm',{
+                            "class":" creative__title",
+                            "modOne":" title__label--left",
+                            "modTwo":" title__text--left",
+                            "title":"Great Creative Agency Since 1993",
+                            "text":"Creative & Proffesional Creative Agency!",
+                            "tag":"h2"
+                            })
+                            <div data-watch class="creative__text anim-rise">
+                                <p>It is a long established fact that a reader will be distracted the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                            </div>
+                        </div>
+                        <div title="Creative" data-watch class="creative__image-ibg creative__image-ibg--contain anim-ltr">
+                            <img data-src="@content/svg/creative-agency/creative.svg" alt="Creative">
+                        </div>
+                    </div>
+                </section>
+                <section data-watch="navigator" class="services">
+                    <div class="services__container">
+                        @@include('html/modules/title.htm',{
+                        "class":" services__title",
+                        "modOne":" ",
+                        "modTwo":" ",
+                        "title":"Our services",
+                        "text":"Creative & Proffesional creative Agency!",
+                        "tag":"h2"
+                        })
+                        <div data-watch class="services__cards">
+                            @@include('html/modules/service.htm',{
+                            "class":" service--blue services__card",
+                            "icon":"activity",
+                            "title":"Business Planning",
+                            "text":"There are many variations of passages of Lorem Ipsum available but majority have suffered"
+                            })
+                            @@include('html/modules/service.htm',{
+                            "class":" service--blue services__card",
+                            "icon":"wallet",
+                            "title":"Financial Planning",
+                            "text":"There are many variations of passages of Lorem Ipsum available but majority have suffered"
+                            })
+                            @@include('html/modules/service.htm',{
+                            "class":" service--orange services__card",
+                            "icon":"send",
+                            "title":"Market Analysis",
+                            "text":"There are many variations of passages of Lorem Ipsum available but majority have suffered"
+                            })
+                            @@include('html/modules/service.htm',{
+                            "class":" service--green services__card",
+                            "icon":"activity",
+                            "title":"Business Planning",
+                            "text":"There are many variations of passages of Lorem Ipsum available but majority have suffered"
+                            })
+                            @@include('html/modules/service.htm',{
+                            "class":" service--purple services__card",
+                            "icon":"wallet",
+                            "title":"Financial Planning",
+                            "text":"There are many variations of passages of Lorem Ipsum available but majority have suffered"
+                            })
+                            @@include('html/modules/service.htm',{
+                            "class":" service--salad services__card",
+                            "icon":"send",
+                            "title":"Market Analysis",
+                            "text":"There are many variations of passages of Lorem Ipsum available but majority have suffered"
+                            })
+                        </div>
+                    </div>
+                </section>
+                <section class="sales">
+                    <div class="sales__container">
+                        <div class="sales__body">
+                            @@include('html/modules/title.htm',{
+                            "class":" sales__title",
+                            "modOne":" title__label--left",
+                            "modTwo":" ",
+                            "title":"Our Speciality Sales Increase By 250%",
+                            "text":"",
+                            "tag":"h2"
+                            })
+                            <ul data-watch class="sales__list">
+                                <li data-watch class="item-list sales__list-item">
+                                    <img src="@content/svg/tick-square.svg" alt="Check">
+                                    <p>There are many variations of passages of Lorem Ipsum.</p>
+                                </li>
+                                <li data-watch class="item-list sales__list-item">
+                                    <img src="@content/svg/tick-square.svg" alt="Check">
+                                    <p>available, but the majority have suffered alteration in some form, by injected humour.</p>
+                                </li>
+                                <li data-watch class="item-list sales__list-item">
+                                    <img src="@content/svg/tick-square.svg" alt="Check">
+                                    <p>randomised words which don't look even slightly believable.</p>
+                                </li>
+                                <li data-watch class="item-list sales__list-item">
+                                    <img src="@content/svg/tick-square.svg" alt="Check">
+                                    <p>If you are going to use a passage of Lorem Ipsum.</p>
+                                </li>
+                                <li data-watch class="item-list sales__list-item">
+                                    <img src="@content/svg/tick-square.svg" alt="Check">
+                                    <p>need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div title="Rating" data-watch class="sales__image-ibg sales__image-ibg--contain">
+                            <img data-src="@content/svg/home/home.svg" alt="Peoples">
+                        </div>
+                    </div>
+                </section>
+                <section data-watch="navigator" class="projects">
+                    <div class="projects__container">
+                        @@include('html/modules/title.htm',{
+                        "class":" projects__title",
+                        "modOne":"",
+                        "modTwo":" ",
+                        "title":"Our Projects",
+                        "text":"Creative & Proffesional Creative Agency!",
+                        "tag":"h2"
+                        })
+                        <div data-tabs data-tabs-animate="1000" class="tabs projects__tabs">
+                            <nav data-tabs-titles class="tabs__navigation">
+                                <button type="button" class="tabs__title tab-active">All</button>
+                                <button type="button" class="tabs__title">Web UI</button>
+                                <button type="button" class="tabs__title">Mobile UI</button>
+                                <button type="button" class="tabs__title">Branding</button>
+                            </nav>
+                            <div data-tabs-body class="tabs__content">
+                                <div class="tabs__body">
+                                    <div class="tabs__inner">
+                                        <div data-watch class="tabs__item tabs__item--big">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project01.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                        <div data-watch class="tabs__item tabs__item--small">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project02.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                        <div data-watch class="tabs__item tabs__item--small">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project03.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                        <div data-watch class="tabs__item tabs__item--big">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project04.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__body">
+                                    <div class="tabs__inner">
+                                        <div data-watch class="tabs__item tabs__item--big">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project01.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__body">
+                                    <div class="tabs__inner">
+                                        <div data-watch class="tabs__item tabs__item--small">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project02.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                        <div data-watch class="tabs__item tabs__item--small">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project03.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__body">
+                                    <div class="tabs__inner">
+                                        <div data-watch class="tabs__item tabs__item--big">
+                                            <a title="Project" href="#" class="tabs__image-ibg">
+                                                <img data-src="@content/img/our-projects/project04.jpg" alt="Project">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section data-watch="navigator" class="clients">
+                    <div class="clients__container">
+                        @@include('html/modules/title.htm',{
+                        "class":" clients__title",
+                        "modOne":" title__label--light title__label--left",
+                        "modTwo":" title__text--light title__text--left",
+                        "title":"What Our Happy Clients Say",
+                        "text":"randomised words which don't look even slightly believable.",
+                        "tag":"h2"
+                        })
+                        <div class="swiper clients__slider">
+                            <div class="swiper-wrapper clients__wrapper">
+                                <div class="swiper-slide clients__slide">
+                                    <div data-watch class="review clients__review">
+                                        <div class="review__body">
+                                            <h3 class="review__title">
+                                                YOlo1Life
+                                            </h3>
+                                            <div class="review__text">
+                                                <p>
+                                                    randomised words which don't
+                                                    look even slightly believable.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div title="Client" class="review__image-ibg">
+                                            <img data-src="@content/img/clients/client01.jpg" alt="Client">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clients__slide">
+                                    <div data-watch class="review clients__review">
+                                        <div class="review__body">
+                                            <h3 class="review__title">
+                                                Rylokd590
+                                            </h3>
+                                            <div class="review__text">
+                                                <p>
+                                                    randomised words which don't
+                                                    look even slightly believable.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div title="Client" class="review__image-ibg">
+                                            <img data-src="@content/img/clients/client01.jpg" alt="Client">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clients__slide">
+                                    <div data-watch class="review clients__review">
+                                        <div class="review__body">
+                                            <h3 class="review__title">
+                                                Elistanaka
+                                            </h3>
+                                            <div class="review__text">
+                                                <p>
+                                                    randomised words which don't
+                                                    look even slightly believable.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div title="Client" class="review__image-ibg">
+                                            <img data-src="@content/img/clients/client01.jpg" alt="Client">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination--light"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-watch="navigator" class="blog">
+                    <div class="blog__container">
+                        @@include('html/modules/title.htm',{
+                        "class":" blog__title",
+                        "modOne":"",
+                        "modTwo":" ",
+                        "title":"Blog",
+                        "text":"Creative & Proffesional Creative Agency!",
+                        "tag":"h2"
+                        })
+                        <div class="swiper blog__slider">
+                            <div class="swiper-wrapper blog__wrapper">
+                                <div class="swiper-slide">
+                                    <article data-watch class="news">
+                                        <a title="News" href="#" class="news__image-ibg">
+                                            <img data-src="@content/img/blog/news01.jpg" alt="News">
+                                        </a>
+                                        <a href="#" class="news__title">
+                                            <h2>Free Font Alternatives: The Ultimate Guide</h2>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide blog__slide">
+                                    <article data-watch class="news">
+                                        <a title="News" href="#" class="news__image-ibg">
+                                            <img data-src="@content/img/blog/news02.jpg" alt="News">
+                                        </a>
+                                        <a href="#" class="news__title">
+                                            <h2>100 Things a UX/UI Designer Should Know</h2>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide blog__slide">
+                                    <article data-watch class="news">
+                                        <a title="News" href="#" class="news__image-ibg">
+                                            <img data-src="@content/img/blog/news01.jpg" alt="News">
+                                        </a>
+                                        <a href="#" class="news__title">
+                                            <h2>Free Font Alternatives: The Ultimate Guide</h2>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide blog__slide">
+                                    <article data-watch class="news">
+                                        <a title="News" href="#" class="news__image-ibg">
+                                            <img data-src="@content/img/blog/news02.jpg" alt="News">
+                                        </a>
+                                        <a href="#" class="news__title">
+                                            <h2>100 Things a UX/UI Designer Should Know</h2>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide blog__slide">
+                                    <article data-watch class="news">
+                                        <a title="News" href="#" class="news__image-ibg">
+                                            <img data-src="@content/img/blog/news01.jpg" alt="News">
+                                        </a>
+                                        <a href="#" class="news__title">
+                                            <h2>Free Font Alternatives: The Ultimate Guide</h2>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide blog__slide">
+                                    <article data-watch class="news">
+                                        <a title="News" href="#" class="news__image-ibg">
+                                            <img data-src="@content/img/blog/news02.jpg" alt="News">
+                                        </a>
+                                        <a href="#" class="news__title">
+                                            <h2>100 Things a UX/UI Designer Should Know</h2>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- FOOTER -->
+            @@include('html/components/footer.htm',{})
+        </div>
+        <!-- SCRIPTS -->
+        @@include('html/imports/js.htm',{})
+    </body>
+</html>

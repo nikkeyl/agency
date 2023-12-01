@@ -1,0 +1,120 @@
+/* HEADER MENU */
+.menu {
+    &__body {
+        @media (max-width: md($mobile)) {
+            @include wh(100%, 100%);
+
+            position: fixed;
+            left: -100%;
+            top: 0;
+            z-index: 4;
+            overflow: auto;
+            padding-top: rem(100);
+            padding-bottom: rem(30);
+            background-color: $color-light-blue;
+            transition: all 0.3s ease;
+
+            &::before {
+                @include pseudo($position: fixed);
+                @include adaptive-value("height", 86, 74, 767, 320, 1);
+
+                left: -100%;
+                top: 0;
+                z-index: 4;
+                border-bottom: rem(1) solid $color-light;
+                width: 100%;
+                background-color: $color-light-blue;
+                transition: left 0.3s ease;
+            }
+
+            .dark & {
+                background-color: $color-dark-gray;
+            }
+
+            .menu-open & {
+                left: 0;
+
+                &::before {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &__icon-menu {
+        @media (max-width: md($mobile)) {
+        }
+    }
+
+    &__item {
+        @media (max-width: md($mobile)) {
+        }
+    }
+
+    &__link {
+        $font-size: 16;
+
+        position: relative;
+        padding: rem(15) 0;
+        font-family: $main-font-family;
+        font-weight: 500;
+        font-size: rem($font-size);
+        line-height: math.div(24, $font-size);
+        color: #bdc2ff;
+        transition: all 0.3s ease;
+
+        &::after {
+            @include pseudo;
+
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: rem(2);
+            background-color: $color-light;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &.navigator-active {
+            color: $color-light;
+
+            &::after {
+                left: 0;
+                width: 100%;
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                &::after {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: md($mobile)) {
+            $font-size: 25;
+
+            font-size: rem($font-size);
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $color-light;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: rem(30);
+        row-gap: rem(10);
+
+        @media (max-width: md($mobile)) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: rem(20);
+        }
+    }
+}
